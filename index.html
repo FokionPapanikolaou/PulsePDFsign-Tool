@@ -76,7 +76,7 @@
 <!-- ================= ΕΛΛΗΝΙΚΑ ================= -->
 <section id="el">
   <h2>Πολιτική Απορρήτου</h2>
-  <p class="updated">Τελευταία ενημέρωση: 7 Αυγούστου 2026 &nbsp;·&nbsp; Ισχύει για το PulsePDFsign για Windows</p>
+  <p class="updated">Τελευταία ενημέρωση: 8 Αυγούστου 2026 &nbsp;·&nbsp; Ισχύει για το PulsePDFsign για Windows</p>
 
   <div class="card key">
     <strong>Με μια πρόταση:</strong> το PulsePDFsign δεν συλλέγει, δεν αποθηκεύει
@@ -121,7 +121,10 @@
   <h3>Τι αποθηκεύεται στον υπολογιστή σας</h3>
   <ul>
     <li><strong>Ρυθμίσεις</strong> στο <code>%APPDATA%\PulsePDFsign</code> —
-    προτιμήσεις όπως γλώσσα, επίπεδο υπογραφής και διακομιστής χρονοσήμανσης.</li>
+    προτιμήσεις όπως γλώσσα, επίπεδο υπογραφής και διακομιστής χρονοσήμανσης.
+    Αν επιλέξετε πιστοποιητικό από τα Windows, αποθηκεύεται το αποτύπωμά του
+    (thumbprint) ώστε να προεπιλέγεται την επόμενη φορά· είναι δημόσιο
+    αναγνωριστικό, όχι κλειδί.</li>
     <li><strong>Αρχείο καταγραφής και προσωρινά αρχεία</strong> στο
     <code>%LOCALAPPDATA%\PulsePDFsign</code> — τεχνικές πληροφορίες για τον
     εντοπισμό σφαλμάτων. Παραμένουν τοπικά και δεν αποστέλλονται.</li>
@@ -132,6 +135,12 @@
     όσο διαρκεί η εργασία και χάνονται με το κλείσιμο. Με χρήση token, το
     ιδιωτικό κλειδί δεν φεύγει ποτέ από τη συσκευή.
   </div>
+  <p><strong>Χώρος πιστοποιητικών των Windows.</strong> Αν επιλέξετε αυτή την
+  πηγή κλειδιού, η εφαρμογή διαβάζει τα προσωπικά σας πιστοποιητικά για να σας
+  τα εμφανίσει, και ζητά από τα Windows να υπογράψουν μια σύνοψη. Η ανάγνωση
+  είναι τοπική, δεν αλλάζει τίποτα στον χώρο πιστοποιητικών, δεν αποστέλλεται
+  πουθενά, και το ιδιωτικό κλειδί δεν το βλέπει ποτέ η εφαρμογή. Το PIN, όπου
+  χρειάζεται, το ζητούν απευθείας τα Windows.</p>
   <p>Μπορείτε να διαγράψετε τα παραπάνω ανά πάσα στιγμή σβήνοντας τους δύο
   φακέλους ή απεγκαθιστώντας την εφαρμογή.</p>
 
@@ -155,7 +164,7 @@
 <!-- ================= ENGLISH ================= -->
 <section id="en">
   <h2>Privacy Policy</h2>
-  <p class="updated">Last updated: 7 August 2026 &nbsp;·&nbsp; Applies to PulsePDFsign for Windows</p>
+  <p class="updated">Last updated: 8 August 2026 &nbsp;·&nbsp; Applies to PulsePDFsign for Windows</p>
 
   <div class="card key">
     <strong>In one sentence:</strong> PulsePDFsign collects, stores and
@@ -198,7 +207,9 @@
   <h3>What is stored on your computer</h3>
   <ul>
     <li><strong>Settings</strong> in <code>%APPDATA%\PulsePDFsign</code> —
-    preferences such as language, signature level and timestamp server.</li>
+    preferences such as language, signature level and timestamp server. If you
+    pick a certificate from Windows, its thumbprint is saved so it can be
+    preselected next time; a thumbprint is a public identifier, not a key.</li>
     <li><strong>A log file and caches</strong> in
     <code>%LOCALAPPDATA%\PulsePDFsign</code> — technical information for
     diagnosing faults. These stay local and are never transmitted.</li>
@@ -209,6 +220,11 @@
     duration of a job and discarded when the application closes. With a token,
     the private key never leaves the device.
   </div>
+  <p><strong>The Windows certificate store.</strong> If you choose that key
+  source, the application reads your personal certificates in order to list
+  them, and asks Windows to sign a digest. The read is local, changes nothing
+  in the store, is never transmitted, and the private key is never seen by the
+  application. Where a PIN is needed, Windows asks for it directly.</p>
   <p>You can remove all of the above at any time by deleting those two folders
   or uninstalling the application.</p>
 
