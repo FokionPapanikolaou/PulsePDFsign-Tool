@@ -153,7 +153,9 @@
   τα εμφανίσει, και ζητά από τα Windows να υπογράψουν μια σύνοψη. Η ανάγνωση
   είναι τοπική, δεν αλλάζει τίποτα στον χώρο πιστοποιητικών, δεν αποστέλλεται
   πουθενά, και το ιδιωτικό κλειδί δεν το βλέπει ποτέ η εφαρμογή. Το PIN, όπου
-  χρειάζεται, το ζητούν απευθείας τα Windows.</p>
+  χρειάζεται, είτε το γράφετε στην εφαρμογή — οπότε κρατιέται μόνο στη μνήμη
+  όσο διαρκεί η εργασία και δίνεται μόνο στον driver του token — είτε το
+  ζητούν απευθείας τα Windows.</p>
   <p>Μπορείτε να διαγράψετε τα παραπάνω ανά πάσα στιγμή σβήνοντας τους δύο
   φακέλους ή απεγκαθιστώντας την εφαρμογή.</p>
 
@@ -249,7 +251,9 @@
   source, the application reads your personal certificates in order to list
   them, and asks Windows to sign a digest. The read is local, changes nothing
   in the store, is never transmitted, and the private key is never seen by the
-  application. Where a PIN is needed, Windows asks for it directly.</p>
+  application. Where a PIN is needed, you either type it into the application —
+  it is then held in memory for the duration of the job and handed only to the
+  token's driver — or Windows asks for it directly.</p>
   <p>You can remove all of the above at any time by deleting those two folders
   or uninstalling the application.</p>
 
